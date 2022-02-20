@@ -64,7 +64,7 @@
         },
         beforeMount() {
             this.axios
-            .get('https://salty-spire-93754.herokuapp.com//api/calendar')
+            .get('https://salty-spire-93754.herokuapp.com/api/calendar')
             .then(response => {
                 this.dates = response.data;
             });
