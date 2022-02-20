@@ -36,9 +36,9 @@
                     <tbody id="tbody" class="text-center">
                         <div v-for="(date, index) in dates" :key="index"> 
                                 <tr v-for="(td, index) in add_rows(date)" :key="index">
-                                    <td class = 'm-4'>{{ td.day }}</td>
-                                    <td class = 'm-4'>{{ td.day_name }}</td>
-                                    <td class = 'm-4'>{{ td.description }}</td>
+                                    <td>{{ td.day }}</td>
+                                    <td>{{ td.day_name }}</td>
+                                    <td>{{ td.description }}</td>
                                 </tr>
                                 <br/>
                         </div>
