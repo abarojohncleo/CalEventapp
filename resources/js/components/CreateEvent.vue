@@ -64,7 +64,8 @@
         },
         beforeMount() {
             this.axios
-            .get('https://salty-spire-93754.herokuapp.com/api/calendar')
+            // .get('https://salty-spire-93754.herokuapp.com/api/calendar')
+            .get('https://localhost:8000/api/calendar')
             .then(response => {
                 this.dates = response.data;
             });
@@ -78,7 +79,8 @@
             days:this.getCheckboxFilters()
         }
             this.axios
-                .post('https://salty-spire-93754.herokuapp.com/api/calendar', data)
+                // .post('https://salty-spire-93754.herokuapp.com/api/calendar', data)
+                .post('https://localhost:8000/api/calendar', data)
                 .then(response => {
                     this.submit_status = 'OK',
                     this.$route.push({name: 'home'})
