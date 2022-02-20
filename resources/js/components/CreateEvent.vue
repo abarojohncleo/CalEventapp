@@ -78,7 +78,7 @@
             days:this.getCheckboxFilters()
         }
             this.axios
-                .post('https://salty-spire-93754.herokuapp.com//api/calendar', data)
+                .post('https://salty-spire-93754.herokuapp.com/api/calendar', data)
                 .then(response => {
                     this.submit_status = 'OK',
                     this.$route.push({name: 'home'})
